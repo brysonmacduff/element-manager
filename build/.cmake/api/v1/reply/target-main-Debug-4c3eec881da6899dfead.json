@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "tests/shape_tests"
+			"path" : "main/main"
 		}
 	],
 	"backtrace" : 1,
@@ -15,7 +15,7 @@
 		],
 		"files" : 
 		[
-			"tests/CMakeLists.txt"
+			"main/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -25,13 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 4,
+				"line" : 1,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 6,
+				"line" : 3,
 				"parent" : 0
 			}
 		]
@@ -42,8 +42,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"backtrace" : 2,
-					"fragment" : "-DGTEST_HAS_PTHREAD=1"
+					"fragment" : "-g"
 				},
 				{
 					"fragment" : "-std=gnu++20"
@@ -85,14 +84,13 @@
 			{
 				"backtraces" : 
 				[
-					2
+					1
 				],
 				"standard" : "20"
 			},
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
@@ -107,11 +105,15 @@
 			"id" : "inc::@0bbf55e5ea592c3d3cc2"
 		}
 	],
-	"id" : "shape_tests::@a44f0ac069e85531cdee",
+	"id" : "main::@15c4a824ab2728a3f5e7",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "",
 				"role" : "flags"
@@ -120,25 +122,16 @@
 				"backtrace" : 2,
 				"fragment" : "../src/libsrc.a",
 				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libgtest_main.a",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libgtest.a",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "shape_tests",
-	"nameOnDisk" : "shape_tests",
+	"name" : "main",
+	"nameOnDisk" : "main",
 	"paths" : 
 	{
-		"build" : "tests",
-		"source" : "tests"
+		"build" : "main",
+		"source" : "main"
 	},
 	"sourceGroups" : 
 	[
@@ -146,8 +139,7 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
@@ -156,13 +148,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "tests/misc_tests.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "tests/shape_tests.cpp",
+			"path" : "main/main.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
