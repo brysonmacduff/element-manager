@@ -1,13 +1,33 @@
+// cpp-template headers
 #include "shape.h"
 
-namespace Geometry
+// standard library headers
+#include <iostream>
+
+using namespace Geometry;
+
+Shape::Shape(const int& side_count)
 {
-Shape::Shape(int sideCount)
-{
-    this->sideCount = sideCount;
+    this->side_count = side_count;
 }
-int Shape::GetSideCount()
+
+Shape::Shape(const Shape& shape)
 {
-    return sideCount;
+    this->side_count = shape.side_count;
 }
+
+const int& Shape::GetSideCount() const
+{
+    return side_count;
+}
+
+Shape& Shape::operator=(const Shape& rhs)
+{
+    if(this == &rhs)
+    {
+        return *this;
+    }
+
+    side_count = rhs.side_count;
+    return *this;
 }

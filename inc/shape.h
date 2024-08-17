@@ -5,16 +5,21 @@ namespace Geometry
 class Shape
 {
     public:
-        Shape(int sideCount);
-        int GetSideCount();
+        Shape() = delete;
+        // default constructor
+        Shape(const int& side_count);
+        // copy constructor
+        Shape(const Shape& shape);
+        const int& GetSideCount() const;
+        Shape& operator=(const Shape& rhs);
 
-        friend std::ostream& operator<<(std::ostream& o, const Shape& s)
+        friend std::ostream& operator<<(std::ostream& stream, const Shape& shape)
         {
-            o << "Shape side count: " << s.sideCount;
-            return o;
+            stream << "Shape side count: " << shape.side_count;
+            return stream;
         }
 
     private:
-        int sideCount;
+        int side_count;
 };
 }
