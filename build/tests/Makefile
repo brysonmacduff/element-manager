@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /home/bryson/projects/c++/cpp-template/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -118,42 +128,66 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-tests/CMakeFiles/tests.dir/rule:
-	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/tests.dir/rule
-.PHONY : tests/CMakeFiles/tests.dir/rule
+tests/CMakeFiles/shape_tests.dir/rule:
+	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/shape_tests.dir/rule
+.PHONY : tests/CMakeFiles/shape_tests.dir/rule
 
 # Convenience name for target.
-tests: tests/CMakeFiles/tests.dir/rule
-.PHONY : tests
+shape_tests: tests/CMakeFiles/shape_tests.dir/rule
+.PHONY : shape_tests
 
 # fast build rule for target.
-tests/fast:
-	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/build
-.PHONY : tests/fast
+shape_tests/fast:
+	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/shape_tests.dir/build.make tests/CMakeFiles/shape_tests.dir/build
+.PHONY : shape_tests/fast
 
-test.o: test.cpp.o
-.PHONY : test.o
+misc_tests.o: misc_tests.cpp.o
+.PHONY : misc_tests.o
 
 # target to build an object file
-test.cpp.o:
-	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/test.cpp.o
-.PHONY : test.cpp.o
+misc_tests.cpp.o:
+	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/shape_tests.dir/build.make tests/CMakeFiles/shape_tests.dir/misc_tests.cpp.o
+.PHONY : misc_tests.cpp.o
 
-test.i: test.cpp.i
-.PHONY : test.i
+misc_tests.i: misc_tests.cpp.i
+.PHONY : misc_tests.i
 
 # target to preprocess a source file
-test.cpp.i:
-	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/test.cpp.i
-.PHONY : test.cpp.i
+misc_tests.cpp.i:
+	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/shape_tests.dir/build.make tests/CMakeFiles/shape_tests.dir/misc_tests.cpp.i
+.PHONY : misc_tests.cpp.i
 
-test.s: test.cpp.s
-.PHONY : test.s
+misc_tests.s: misc_tests.cpp.s
+.PHONY : misc_tests.s
 
 # target to generate assembly for a file
-test.cpp.s:
-	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/test.cpp.s
-.PHONY : test.cpp.s
+misc_tests.cpp.s:
+	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/shape_tests.dir/build.make tests/CMakeFiles/shape_tests.dir/misc_tests.cpp.s
+.PHONY : misc_tests.cpp.s
+
+shape_tests.o: shape_tests.cpp.o
+.PHONY : shape_tests.o
+
+# target to build an object file
+shape_tests.cpp.o:
+	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/shape_tests.dir/build.make tests/CMakeFiles/shape_tests.dir/shape_tests.cpp.o
+.PHONY : shape_tests.cpp.o
+
+shape_tests.i: shape_tests.cpp.i
+.PHONY : shape_tests.i
+
+# target to preprocess a source file
+shape_tests.cpp.i:
+	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/shape_tests.dir/build.make tests/CMakeFiles/shape_tests.dir/shape_tests.cpp.i
+.PHONY : shape_tests.cpp.i
+
+shape_tests.s: shape_tests.cpp.s
+.PHONY : shape_tests.s
+
+# target to generate assembly for a file
+shape_tests.cpp.s:
+	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/shape_tests.dir/build.make tests/CMakeFiles/shape_tests.dir/shape_tests.cpp.s
+.PHONY : shape_tests.cpp.s
 
 # Help Target
 help:
@@ -163,10 +197,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... tests"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
+	@echo "... test"
+	@echo "... shape_tests"
+	@echo "... misc_tests.o"
+	@echo "... misc_tests.i"
+	@echo "... misc_tests.s"
+	@echo "... shape_tests.o"
+	@echo "... shape_tests.i"
+	@echo "... shape_tests.s"
 .PHONY : help
 
 

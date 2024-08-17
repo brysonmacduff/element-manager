@@ -25,7 +25,8 @@ endif()
 # TEST_FILES at tests/CMakeLists.txt:1 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/bryson/projects/c++/cpp-template/tests/*.cpp")
 set(OLD_GLOB
-  "/home/bryson/projects/c++/cpp-template/tests/test.cpp"
+  "/home/bryson/projects/c++/cpp-template/tests/misc_tests.cpp"
+  "/home/bryson/projects/c++/cpp-template/tests/shape_tests.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

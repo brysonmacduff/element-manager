@@ -1,0 +1,84 @@
+Start testing: Aug 17 00:02 EDT
+----------------------------------------------------------
+1/3 Testing: misc_tests.google_test_test
+1/3 Test: misc_tests.google_test_test
+Command: "/home/bryson/projects/c++/cpp-template/build/tests/shape_tests" "--gtest_filter=misc_tests.google_test_test" "--gtest_also_run_disabled_tests"
+Directory: /home/bryson/projects/c++/cpp-template/build/tests
+"misc_tests.google_test_test" start time: Aug 17 00:02 EDT
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = misc_tests.google_test_test
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from misc_tests
+[ RUN      ] misc_tests.google_test_test
+[       OK ] misc_tests.google_test_test (0 ms)
+[----------] 1 test from misc_tests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"misc_tests.google_test_test" end time: Aug 17 00:02 EDT
+"misc_tests.google_test_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: shape_tests.constructor_test
+2/3 Test: shape_tests.constructor_test
+Command: "/home/bryson/projects/c++/cpp-template/build/tests/shape_tests" "--gtest_filter=shape_tests.constructor_test" "--gtest_also_run_disabled_tests"
+Directory: /home/bryson/projects/c++/cpp-template/build/tests
+"shape_tests.constructor_test" start time: Aug 17 00:02 EDT
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = shape_tests.constructor_test
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from shape_tests
+[ RUN      ] shape_tests.constructor_test
+[       OK ] shape_tests.constructor_test (0 ms)
+[----------] 1 test from shape_tests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"shape_tests.constructor_test" end time: Aug 17 00:02 EDT
+"shape_tests.constructor_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: shape_tests.equal_assignment_test
+3/3 Test: shape_tests.equal_assignment_test
+Command: "/home/bryson/projects/c++/cpp-template/build/tests/shape_tests" "--gtest_filter=shape_tests.equal_assignment_test" "--gtest_also_run_disabled_tests"
+Directory: /home/bryson/projects/c++/cpp-template/build/tests
+"shape_tests.equal_assignment_test" start time: Aug 17 00:02 EDT
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = shape_tests.equal_assignment_test
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from shape_tests
+[ RUN      ] shape_tests.equal_assignment_test
+[       OK ] shape_tests.equal_assignment_test (0 ms)
+[----------] 1 test from shape_tests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"shape_tests.equal_assignment_test" end time: Aug 17 00:02 EDT
+"shape_tests.equal_assignment_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 17 00:02 EDT
