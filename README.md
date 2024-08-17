@@ -1,5 +1,5 @@
 * Author: Bryson MacDuff
-* Edit Date: 2024-08-13
+* Edit Date: 2024-08-17
 * Description: This is a c++ template project
 * Build Instructions:
     * cd build
