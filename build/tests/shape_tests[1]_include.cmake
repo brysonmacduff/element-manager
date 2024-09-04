@@ -1,0 +1,5 @@
+if(EXISTS "/home/bryson/projects/c++/cpp-template/build/tests/shape_tests[1]_tests.cmake")
+  include("/home/bryson/projects/c++/cpp-template/build/tests/shape_tests[1]_tests.cmake")
+else()
+  add_test(shape_tests_NOT_BUILT shape_tests_NOT_BUILT)
+endif()
