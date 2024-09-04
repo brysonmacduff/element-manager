@@ -6,20 +6,37 @@
 
 // from google test
 #include <gtest/gtest.h>
+#include <gmock/gmock.h>
 
 namespace ShapeTesting
+{   
+class MockShape : public Geometry::Shape
 {
-bool ConstructorTest()
-{
-    const int sides = 3;
-    const Geometry::Shape s = Geometry::Shape(sides);
-    const bool result = s.GetSideCount() == sides;
-
-    return result;
+public:
+    MOCK_METHOD(int, GetSideCount,());
+};
+    
 }
 
-bool EqualAssignmentOperatorTest()
+// GOOGLE TESTS
+
+TEST(shape_tests,constructor_test)
 {
+    const int sides = 3;
+    ASSERT_NO_FATAL_FAILURE(Geometry::Shape s = Geometry::Shape(sides));
+}
+
+TEST(shape_tests,mock_get_side_count)
+{
+    ShapeTesting::MockShape mock_shape = ShapeTesting::MockShape(3);
+    EXPECT_CALL(mock_shape,GetSideCount()).Times(1).WillOnce(testing::Return(3));
+
+    int sides = mock_shape.GetSideCount();
+    ASSERT_EQ(sides,3);
+}
+
+TEST(shape_tests,equal_assignment_test)
+{   
     const int sides = 3;
     const Geometry::Shape s1 = Geometry::Shape(sides);
     const Geometry::Shape s2 = s1;
@@ -27,18 +44,5 @@ bool EqualAssignmentOperatorTest()
     // verify that data was copied and also that the copy is stored at a different address
     const bool result = s2.GetSideCount() == s1.GetSideCount() && &s2 != &s1;
 
-    return result;
-}
-}
-
-// GOOGLE TESTS
-
-TEST(shape_tests,constructor_test)
-{
-    EXPECT_TRUE(ShapeTesting::ConstructorTest());
-}
-
-TEST(shape_tests,equal_assignment_test)
-{
-    EXPECT_TRUE(ShapeTesting::EqualAssignmentOperatorTest());
+    EXPECT_TRUE(result);
 }

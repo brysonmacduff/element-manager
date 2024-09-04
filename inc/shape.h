@@ -1,17 +1,23 @@
 #include <ostream>
+#include <vector>
 
 namespace Geometry
 {
 class Shape
 {
+    static constexpr float DEGREES_2PI = 360.0;
+
     public:
         Shape() = delete;
         // default constructor
-        Shape(const int& side_count);
+        Shape(int side_count);
+        // elaborate constructor for receiving angles
+        Shape(const std::vector<float>& angles);
         // copy constructor
         Shape(const Shape& shape);
-        const int& GetSideCount() const;
+        int GetSideCount() const;
         Shape& operator=(const Shape& rhs);
+        bool operator==(const Shape& rhs);
 
         friend std::ostream& operator<<(std::ostream& stream, const Shape& shape)
         {
@@ -21,5 +27,7 @@ class Shape
 
     private:
         int side_count;
+        std::vector<float> angles;
+        
 };
 }
