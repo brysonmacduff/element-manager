@@ -17,11 +17,22 @@ class Shape
         Shape(const Shape& shape);
         int GetSideCount() const;
         Shape& operator=(const Shape& rhs);
-        bool operator==(const Shape& rhs);
+        bool operator==(const Shape& rhs) const;
+        std::vector<float>::iterator AnglesBegin();
+        std::vector<float>::iterator AnglesEnd();
 
         friend std::ostream& operator<<(std::ostream& stream, const Shape& shape)
         {
-            stream << "Shape side count: " << shape.side_count;
+            stream << "Side Count: " << shape.side_count << " | ";
+            stream << "Angles: [ ";
+
+            for(auto it = shape.angles.begin(); it != shape.angles.end(); ++it)
+            {
+                stream << *it << " ";
+            }
+
+            stream << "]";
+
             return stream;
         }
 

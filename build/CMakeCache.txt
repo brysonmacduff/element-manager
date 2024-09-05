@@ -163,9 +163,6 @@ DART_TESTING_TIMEOUT:STRING=1500
 //Path to a program.
 GITCOMMAND:FILEPATH=/usr/bin/git
 
-//The directory containing a CMake configuration file for GMock.
-GMock_DIR:PATH=GMock_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for GTest.
 GTest_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/GTest
 

@@ -20,14 +20,14 @@ Shape::Shape(int side_count)
 Shape::Shape(const std::vector<float>& angles)
 {
     side_count = angles.size();
-    this->angles = std::vector<float>(side_count);
+    this->angles = std::vector<float>();
     std::copy(angles.begin(),angles.end(),std::back_inserter(this->angles));
 }
 
 Shape::Shape(const Shape& shape)
 {
     this->side_count = shape.side_count;
-    angles = std::vector<float>(side_count);
+    angles = std::vector<float>();
     std::copy(shape.angles.begin(),shape.angles.end(),std::back_inserter(angles));
 }
 
@@ -44,12 +44,12 @@ Shape& Shape::operator=(const Shape& rhs)
     }
 
     side_count = rhs.side_count;
-    angles = std::vector<float>(side_count);
+    angles = std::vector<float>();
     std::copy(rhs.angles.begin(),rhs.angles.end(),std::back_inserter(angles));
     return *this;
 }
 
-bool Shape::operator==(const Shape& rhs)
+bool Shape::operator==(const Shape& rhs) const
 {
     if(rhs.side_count != side_count)
     {
@@ -65,4 +65,14 @@ bool Shape::operator==(const Shape& rhs)
     }
 
     return true;
+}
+
+std::vector<float>::iterator Shape::AnglesBegin()
+{
+    return angles.begin();
+}
+
+std::vector<float>::iterator Shape::AnglesEnd()
+{
+    return angles.end();
 }

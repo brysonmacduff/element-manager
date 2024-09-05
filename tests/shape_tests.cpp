@@ -8,9 +8,11 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 
+using namespace Geometry;
+
 namespace ShapeTesting
 {   
-class MockShape : public Geometry::Shape
+class MockShape : public Shape
 {
 public:
     MOCK_METHOD(int, GetSideCount,());
@@ -20,10 +22,23 @@ public:
 
 // GOOGLE TESTS
 
-TEST(shape_tests,constructor_test)
+TEST(shape_tests,side_count_constructor_test)
 {
     const int sides = 3;
-    ASSERT_NO_FATAL_FAILURE(Geometry::Shape s = Geometry::Shape(sides));
+    ASSERT_NO_FATAL_FAILURE(Shape s = Shape(sides));
+}
+
+TEST(shape_tests,angles_constructor_test)
+{
+    std::vector<float> angles = {90,90,90,90};
+    ASSERT_NO_FATAL_FAILURE(Shape s = Shape(angles));
+    Shape s = Shape(angles);
+    ASSERT_EQ(s.GetSideCount(),4);
+
+    for(auto it = s.AnglesBegin(); it != s.AnglesEnd(); ++it)
+    {
+        EXPECT_EQ(*it,90);
+    }
 }
 
 TEST(shape_tests,mock_get_side_count)
@@ -35,14 +50,37 @@ TEST(shape_tests,mock_get_side_count)
     ASSERT_EQ(sides,3);
 }
 
+TEST(shape_tests,equal_operator_test)
+{   
+    const int sides = 3;
+    const Shape s1 = Shape(sides);
+    const Shape s2 = Shape(sides);
+    bool result = s1 == s2;
+    EXPECT_TRUE(result);
+}
+
 TEST(shape_tests,equal_assignment_test)
 {   
     const int sides = 3;
-    const Geometry::Shape s1 = Geometry::Shape(sides);
-    const Geometry::Shape s2 = s1;
+    const Shape s1 = Shape(sides);
+    const Shape s2 = s1;
 
     // verify that data was copied and also that the copy is stored at a different address
-    const bool result = s2.GetSideCount() == s1.GetSideCount() && &s2 != &s1;
+    EXPECT_NE(&s2,&s1);
+    EXPECT_TRUE(s1 == s2);
+}
 
-    EXPECT_TRUE(result);
+TEST(shape_tests,copy_constructor_test)
+{   
+    Shape original = Shape(5);
+    auto copy_shape = [](Shape copy) -> void
+    {
+        EXPECT_EQ(copy.GetSideCount(),5);
+        for(auto it = copy.AnglesBegin(); it != copy.AnglesEnd(); ++it)
+        {
+            EXPECT_EQ(*it,72);
+        }
+    };
+
+    copy_shape(original);
 }

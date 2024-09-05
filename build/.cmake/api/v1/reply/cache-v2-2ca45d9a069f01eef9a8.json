@@ -906,18 +906,6 @@
 			"value" : "/usr/bin/git"
 		},
 		{
-			"name" : "GMock_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for GMock."
-				}
-			],
-			"type" : "PATH",
-			"value" : "GMock_DIR-NOTFOUND"
-		},
-		{
 			"name" : "GTest_DIR",
 			"properties" : 
 			[

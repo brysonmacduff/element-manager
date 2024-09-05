@@ -1,5 +1,9 @@
-misc_tests.google_test_test 9 0.000148885
+misc_tests.google_test_test 28 5.45067e-05
 shape_tests.constructor_test 9 0.000119211
-shape_tests.equal_assignment_test 9 0.000114029
-shape_tests.mock_get_side_count 1 0.00108197
+shape_tests.equal_assignment_test 19 5.57268e-05
+shape_tests.mock_get_side_count 20 4.66212e-05
+shape_tests.side_count_constructor_test 19 5.47022e-05
+shape_tests.angles_constructor_test 19 5.02875e-05
+shape_tests.copy_constructor_test 16 6.40471e-05
+shape_tests.equal_operator_test 12 8.68599e-05
 ---

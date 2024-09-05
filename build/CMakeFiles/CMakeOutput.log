@@ -553,3 +553,51 @@ int main(void)
   return 0;
 }
 
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bde53/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bde53.dir/build.make CMakeFiles/cmTC_bde53.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bde53.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_bde53.dir/CheckIncludeFile.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_bde53
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bde53.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_bde53.dir/CheckIncludeFile.cxx.o -o cmTC_bde53 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4d41e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4d41e.dir/build.make CMakeFiles/cmTC_4d41e.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4d41e.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_4d41e.dir/src.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4d41e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d41e.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_4d41e.dir/src.cxx.o -o cmTC_4d41e 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
