@@ -69,24 +69,38 @@ include tests/CMakeFiles/shape_tests.dir/progress.make
 # Include the compile flags for this target's objects.
 include tests/CMakeFiles/shape_tests.dir/flags.make
 
-tests/CMakeFiles/shape_tests.dir/misc_tests.cpp.o: tests/CMakeFiles/shape_tests.dir/flags.make
-tests/CMakeFiles/shape_tests.dir/misc_tests.cpp.o: ../tests/misc_tests.cpp
-tests/CMakeFiles/shape_tests.dir/misc_tests.cpp.o: tests/CMakeFiles/shape_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bryson/projects/c++/cpp-template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/shape_tests.dir/misc_tests.cpp.o"
-	cd /home/bryson/projects/c++/cpp-template/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/shape_tests.dir/misc_tests.cpp.o -MF CMakeFiles/shape_tests.dir/misc_tests.cpp.o.d -o CMakeFiles/shape_tests.dir/misc_tests.cpp.o -c /home/bryson/projects/c++/cpp-template/tests/misc_tests.cpp
+tests/CMakeFiles/shape_tests.dir/__/src/main.cpp.o: tests/CMakeFiles/shape_tests.dir/flags.make
+tests/CMakeFiles/shape_tests.dir/__/src/main.cpp.o: ../src/main.cpp
+tests/CMakeFiles/shape_tests.dir/__/src/main.cpp.o: tests/CMakeFiles/shape_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bryson/projects/c++/cpp-template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/shape_tests.dir/__/src/main.cpp.o"
+	cd /home/bryson/projects/c++/cpp-template/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/shape_tests.dir/__/src/main.cpp.o -MF CMakeFiles/shape_tests.dir/__/src/main.cpp.o.d -o CMakeFiles/shape_tests.dir/__/src/main.cpp.o -c /home/bryson/projects/c++/cpp-template/src/main.cpp
 
-tests/CMakeFiles/shape_tests.dir/misc_tests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shape_tests.dir/misc_tests.cpp.i"
-	cd /home/bryson/projects/c++/cpp-template/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bryson/projects/c++/cpp-template/tests/misc_tests.cpp > CMakeFiles/shape_tests.dir/misc_tests.cpp.i
+tests/CMakeFiles/shape_tests.dir/__/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shape_tests.dir/__/src/main.cpp.i"
+	cd /home/bryson/projects/c++/cpp-template/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bryson/projects/c++/cpp-template/src/main.cpp > CMakeFiles/shape_tests.dir/__/src/main.cpp.i
 
-tests/CMakeFiles/shape_tests.dir/misc_tests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shape_tests.dir/misc_tests.cpp.s"
-	cd /home/bryson/projects/c++/cpp-template/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bryson/projects/c++/cpp-template/tests/misc_tests.cpp -o CMakeFiles/shape_tests.dir/misc_tests.cpp.s
+tests/CMakeFiles/shape_tests.dir/__/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shape_tests.dir/__/src/main.cpp.s"
+	cd /home/bryson/projects/c++/cpp-template/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bryson/projects/c++/cpp-template/src/main.cpp -o CMakeFiles/shape_tests.dir/__/src/main.cpp.s
+
+tests/CMakeFiles/shape_tests.dir/__/src/shape.cpp.o: tests/CMakeFiles/shape_tests.dir/flags.make
+tests/CMakeFiles/shape_tests.dir/__/src/shape.cpp.o: ../src/shape.cpp
+tests/CMakeFiles/shape_tests.dir/__/src/shape.cpp.o: tests/CMakeFiles/shape_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bryson/projects/c++/cpp-template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/shape_tests.dir/__/src/shape.cpp.o"
+	cd /home/bryson/projects/c++/cpp-template/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/shape_tests.dir/__/src/shape.cpp.o -MF CMakeFiles/shape_tests.dir/__/src/shape.cpp.o.d -o CMakeFiles/shape_tests.dir/__/src/shape.cpp.o -c /home/bryson/projects/c++/cpp-template/src/shape.cpp
+
+tests/CMakeFiles/shape_tests.dir/__/src/shape.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shape_tests.dir/__/src/shape.cpp.i"
+	cd /home/bryson/projects/c++/cpp-template/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bryson/projects/c++/cpp-template/src/shape.cpp > CMakeFiles/shape_tests.dir/__/src/shape.cpp.i
+
+tests/CMakeFiles/shape_tests.dir/__/src/shape.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shape_tests.dir/__/src/shape.cpp.s"
+	cd /home/bryson/projects/c++/cpp-template/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bryson/projects/c++/cpp-template/src/shape.cpp -o CMakeFiles/shape_tests.dir/__/src/shape.cpp.s
 
 tests/CMakeFiles/shape_tests.dir/shape_tests.cpp.o: tests/CMakeFiles/shape_tests.dir/flags.make
 tests/CMakeFiles/shape_tests.dir/shape_tests.cpp.o: ../tests/shape_tests.cpp
 tests/CMakeFiles/shape_tests.dir/shape_tests.cpp.o: tests/CMakeFiles/shape_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bryson/projects/c++/cpp-template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/shape_tests.dir/shape_tests.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bryson/projects/c++/cpp-template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tests/CMakeFiles/shape_tests.dir/shape_tests.cpp.o"
 	cd /home/bryson/projects/c++/cpp-template/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/shape_tests.dir/shape_tests.cpp.o -MF CMakeFiles/shape_tests.dir/shape_tests.cpp.o.d -o CMakeFiles/shape_tests.dir/shape_tests.cpp.o -c /home/bryson/projects/c++/cpp-template/tests/shape_tests.cpp
 
 tests/CMakeFiles/shape_tests.dir/shape_tests.cpp.i: cmake_force
@@ -99,22 +113,23 @@ tests/CMakeFiles/shape_tests.dir/shape_tests.cpp.s: cmake_force
 
 # Object files for target shape_tests
 shape_tests_OBJECTS = \
-"CMakeFiles/shape_tests.dir/misc_tests.cpp.o" \
+"CMakeFiles/shape_tests.dir/__/src/main.cpp.o" \
+"CMakeFiles/shape_tests.dir/__/src/shape.cpp.o" \
 "CMakeFiles/shape_tests.dir/shape_tests.cpp.o"
 
 # External object files for target shape_tests
 shape_tests_EXTERNAL_OBJECTS =
 
-tests/shape_tests: tests/CMakeFiles/shape_tests.dir/misc_tests.cpp.o
+tests/shape_tests: tests/CMakeFiles/shape_tests.dir/__/src/main.cpp.o
+tests/shape_tests: tests/CMakeFiles/shape_tests.dir/__/src/shape.cpp.o
 tests/shape_tests: tests/CMakeFiles/shape_tests.dir/shape_tests.cpp.o
 tests/shape_tests: tests/CMakeFiles/shape_tests.dir/build.make
-tests/shape_tests: src/libsrc.a
 tests/shape_tests: /usr/lib/x86_64-linux-gnu/libgtest_main.a
 tests/shape_tests: /usr/lib/x86_64-linux-gnu/libgmock_main.a
 tests/shape_tests: /usr/lib/x86_64-linux-gnu/libgmock.a
 tests/shape_tests: /usr/lib/x86_64-linux-gnu/libgtest.a
 tests/shape_tests: tests/CMakeFiles/shape_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bryson/projects/c++/cpp-template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable shape_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bryson/projects/c++/cpp-template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable shape_tests"
 	cd /home/bryson/projects/c++/cpp-template/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/shape_tests.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/bryson/projects/c++/cpp-template/build/tests && /usr/bin/cmake -D TEST_TARGET=shape_tests -D TEST_EXECUTABLE=/home/bryson/projects/c++/cpp-template/build/tests/shape_tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/bryson/projects/c++/cpp-template/build/tests -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=shape_tests_TESTS -D CTEST_FILE=/home/bryson/projects/c++/cpp-template/build/tests/shape_tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
 

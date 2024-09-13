@@ -123,7 +123,6 @@ preinstall/fast:
 
 # clear depends
 depend:
-	cd /home/bryson/projects/c++/cpp-template/build && $(CMAKE_COMMAND) -P /home/bryson/projects/c++/cpp-template/build/CMakeFiles/VerifyGlobs.cmake
 	cd /home/bryson/projects/c++/cpp-template/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -140,6 +139,30 @@ src: src/CMakeFiles/src.dir/rule
 src/fast:
 	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/build
 .PHONY : src/fast
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 shape.o: shape.cpp.o
 .PHONY : shape.o
@@ -175,6 +198,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... src"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... shape.o"
 	@echo "... shape.i"
 	@echo "... shape.s"
@@ -189,7 +215,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/bryson/projects/c++/cpp-template/build && $(CMAKE_COMMAND) -P /home/bryson/projects/c++/cpp-template/build/CMakeFiles/VerifyGlobs.cmake
 	cd /home/bryson/projects/c++/cpp-template/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

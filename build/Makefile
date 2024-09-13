@@ -123,7 +123,6 @@ preinstall/fast:
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -P /home/bryson/projects/c++/cpp-template/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -505,43 +504,17 @@ src/fast:
 .PHONY : src/fast
 
 #=============================================================================
-# Target rules for targets named inc
+# Target rules for targets named run_tests
 
 # Build rule for target.
-inc: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 inc
-.PHONY : inc
+run_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_tests
+.PHONY : run_tests
 
 # fast build rule for target.
-inc/fast:
-	$(MAKE) $(MAKESILENT) -f inc/CMakeFiles/inc.dir/build.make inc/CMakeFiles/inc.dir/build
-.PHONY : inc/fast
-
-#=============================================================================
-# Target rules for targets named shape_tests
-
-# Build rule for target.
-shape_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shape_tests
-.PHONY : shape_tests
-
-# fast build rule for target.
-shape_tests/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/shape_tests.dir/build.make tests/CMakeFiles/shape_tests.dir/build
-.PHONY : shape_tests/fast
-
-#=============================================================================
-# Target rules for targets named main
-
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
-
-# fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f main/CMakeFiles/main.dir/build.make main/CMakeFiles/main.dir/build
-.PHONY : main/fast
+run_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_tests.dir/build.make tests/CMakeFiles/run_tests.dir/build
+.PHONY : run_tests/fast
 
 # Help Target
 help:
@@ -580,9 +553,7 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
-	@echo "... inc"
-	@echo "... main"
-	@echo "... shape_tests"
+	@echo "... run_tests"
 	@echo "... src"
 .PHONY : help
 
@@ -595,7 +566,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /home/bryson/projects/c++/cpp-template/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

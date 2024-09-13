@@ -1,2 +1,1 @@
-/usr/bin/ar qc libsrc.a CMakeFiles/src.dir/shape.cpp.o
-/usr/bin/ranlib libsrc.a
+/usr/bin/c++ CMakeFiles/src.dir/main.cpp.o CMakeFiles/src.dir/shape.cpp.o -o src 

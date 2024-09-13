@@ -43,9 +43,11 @@ TEST(shape_tests,angles_constructor_test)
 
 TEST(shape_tests,mock_get_side_count)
 {
+    // initialize mocked shape instance
     ShapeTesting::MockShape mock_shape = ShapeTesting::MockShape(3);
+    // set the return value of the mocked GetSideCount()
     EXPECT_CALL(mock_shape,GetSideCount()).Times(1).WillOnce(testing::Return(3));
-
+    // call the mocked GetSideCount()
     int sides = mock_shape.GetSideCount();
     ASSERT_EQ(sides,3);
 }

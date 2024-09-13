@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/src.dir/main.cpp.o"
+  "CMakeFiles/src.dir/main.cpp.o.d"
   "CMakeFiles/src.dir/shape.cpp.o"
   "CMakeFiles/src.dir/shape.cpp.o.d"
-  "libsrc.a"
-  "libsrc.pdb"
+  "src"
+  "src.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

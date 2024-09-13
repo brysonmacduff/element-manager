@@ -13,5 +13,3 @@ include(GoogleTest)
 add_subdirectory(src)
 add_subdirectory(inc)
 add_subdirectory(tests)
-add_subdirectory(main)
-

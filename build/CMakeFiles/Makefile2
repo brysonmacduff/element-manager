@@ -66,14 +66,12 @@ CMAKE_BINARY_DIR = /home/bryson/projects/c++/cpp-template/build
 all: src/all
 all: inc/all
 all: tests/all
-all: main/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: src/preinstall
 preinstall: inc/preinstall
 preinstall: tests/preinstall
-preinstall: main/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -108,14 +106,13 @@ clean: CMakeFiles/ContinuousSubmit.dir/clean
 clean: src/clean
 clean: inc/clean
 clean: tests/clean
-clean: main/clean
 .PHONY : clean
 
 #=============================================================================
 # Directory level rules for directory inc
 
 # Recursive "all" directory target.
-inc/all: inc/CMakeFiles/inc.dir/all
+inc/all:
 .PHONY : inc/all
 
 # Recursive "preinstall" directory target.
@@ -123,23 +120,8 @@ inc/preinstall:
 .PHONY : inc/preinstall
 
 # Recursive "clean" directory target.
-inc/clean: inc/CMakeFiles/inc.dir/clean
+inc/clean:
 .PHONY : inc/clean
-
-#=============================================================================
-# Directory level rules for directory main
-
-# Recursive "all" directory target.
-main/all: main/CMakeFiles/main.dir/all
-.PHONY : main/all
-
-# Recursive "preinstall" directory target.
-main/preinstall:
-.PHONY : main/preinstall
-
-# Recursive "clean" directory target.
-main/clean: main/CMakeFiles/main.dir/clean
-.PHONY : main/clean
 
 #=============================================================================
 # Directory level rules for directory src
@@ -160,7 +142,7 @@ src/clean: src/CMakeFiles/src.dir/clean
 # Directory level rules for directory tests
 
 # Recursive "all" directory target.
-tests/all: tests/CMakeFiles/shape_tests.dir/all
+tests/all: tests/CMakeFiles/run_tests.dir/all
 .PHONY : tests/all
 
 # Recursive "preinstall" directory target.
@@ -168,7 +150,7 @@ tests/preinstall:
 .PHONY : tests/preinstall
 
 # Recursive "clean" directory target.
-tests/clean: tests/CMakeFiles/shape_tests.dir/clean
+tests/clean: tests/CMakeFiles/run_tests.dir/clean
 .PHONY : tests/clean
 
 #=============================================================================
@@ -903,15 +885,15 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 # Target rules for target src/CMakeFiles/src.dir
 
 # All Build rule for target.
-src/CMakeFiles/src.dir/all: inc/CMakeFiles/inc.dir/all
+src/CMakeFiles/src.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bryson/projects/c++/cpp-template/build/CMakeFiles --progress-num=6,7 "Built target src"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bryson/projects/c++/cpp-template/build/CMakeFiles --progress-num=4,5,6 "Built target src"
 .PHONY : src/CMakeFiles/src.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/src.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryson/projects/c++/cpp-template/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryson/projects/c++/cpp-template/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/src.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryson/projects/c++/cpp-template/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/src.dir/rule
@@ -926,84 +908,30 @@ src/CMakeFiles/src.dir/clean:
 .PHONY : src/CMakeFiles/src.dir/clean
 
 #=============================================================================
-# Target rules for target inc/CMakeFiles/inc.dir
+# Target rules for target tests/CMakeFiles/run_tests.dir
 
 # All Build rule for target.
-inc/CMakeFiles/inc.dir/all:
-	$(MAKE) $(MAKESILENT) -f inc/CMakeFiles/inc.dir/build.make inc/CMakeFiles/inc.dir/depend
-	$(MAKE) $(MAKESILENT) -f inc/CMakeFiles/inc.dir/build.make inc/CMakeFiles/inc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bryson/projects/c++/cpp-template/build/CMakeFiles --progress-num= "Built target inc"
-.PHONY : inc/CMakeFiles/inc.dir/all
+tests/CMakeFiles/run_tests.dir/all:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_tests.dir/build.make tests/CMakeFiles/run_tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_tests.dir/build.make tests/CMakeFiles/run_tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bryson/projects/c++/cpp-template/build/CMakeFiles --progress-num=1,2,3 "Built target run_tests"
+.PHONY : tests/CMakeFiles/run_tests.dir/all
 
 # Build rule for subdir invocation for target.
-inc/CMakeFiles/inc.dir/rule: cmake_check_build_system
+tests/CMakeFiles/run_tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryson/projects/c++/cpp-template/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryson/projects/c++/cpp-template/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 inc/CMakeFiles/inc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryson/projects/c++/cpp-template/build/CMakeFiles 0
-.PHONY : inc/CMakeFiles/inc.dir/rule
+.PHONY : tests/CMakeFiles/run_tests.dir/rule
 
 # Convenience name for target.
-inc: inc/CMakeFiles/inc.dir/rule
-.PHONY : inc
+run_tests: tests/CMakeFiles/run_tests.dir/rule
+.PHONY : run_tests
 
 # clean rule for target.
-inc/CMakeFiles/inc.dir/clean:
-	$(MAKE) $(MAKESILENT) -f inc/CMakeFiles/inc.dir/build.make inc/CMakeFiles/inc.dir/clean
-.PHONY : inc/CMakeFiles/inc.dir/clean
-
-#=============================================================================
-# Target rules for target tests/CMakeFiles/shape_tests.dir
-
-# All Build rule for target.
-tests/CMakeFiles/shape_tests.dir/all: src/CMakeFiles/src.dir/all
-tests/CMakeFiles/shape_tests.dir/all: inc/CMakeFiles/inc.dir/all
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/shape_tests.dir/build.make tests/CMakeFiles/shape_tests.dir/depend
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/shape_tests.dir/build.make tests/CMakeFiles/shape_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bryson/projects/c++/cpp-template/build/CMakeFiles --progress-num=3,4,5 "Built target shape_tests"
-.PHONY : tests/CMakeFiles/shape_tests.dir/all
-
-# Build rule for subdir invocation for target.
-tests/CMakeFiles/shape_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryson/projects/c++/cpp-template/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/shape_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryson/projects/c++/cpp-template/build/CMakeFiles 0
-.PHONY : tests/CMakeFiles/shape_tests.dir/rule
-
-# Convenience name for target.
-shape_tests: tests/CMakeFiles/shape_tests.dir/rule
-.PHONY : shape_tests
-
-# clean rule for target.
-tests/CMakeFiles/shape_tests.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/shape_tests.dir/build.make tests/CMakeFiles/shape_tests.dir/clean
-.PHONY : tests/CMakeFiles/shape_tests.dir/clean
-
-#=============================================================================
-# Target rules for target main/CMakeFiles/main.dir
-
-# All Build rule for target.
-main/CMakeFiles/main.dir/all: src/CMakeFiles/src.dir/all
-main/CMakeFiles/main.dir/all: inc/CMakeFiles/inc.dir/all
-	$(MAKE) $(MAKESILENT) -f main/CMakeFiles/main.dir/build.make main/CMakeFiles/main.dir/depend
-	$(MAKE) $(MAKESILENT) -f main/CMakeFiles/main.dir/build.make main/CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bryson/projects/c++/cpp-template/build/CMakeFiles --progress-num=1,2 "Built target main"
-.PHONY : main/CMakeFiles/main.dir/all
-
-# Build rule for subdir invocation for target.
-main/CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryson/projects/c++/cpp-template/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main/CMakeFiles/main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryson/projects/c++/cpp-template/build/CMakeFiles 0
-.PHONY : main/CMakeFiles/main.dir/rule
-
-# Convenience name for target.
-main: main/CMakeFiles/main.dir/rule
-.PHONY : main
-
-# clean rule for target.
-main/CMakeFiles/main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f main/CMakeFiles/main.dir/build.make main/CMakeFiles/main.dir/clean
-.PHONY : main/CMakeFiles/main.dir/clean
+tests/CMakeFiles/run_tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_tests.dir/build.make tests/CMakeFiles/run_tests.dir/clean
+.PHONY : tests/CMakeFiles/run_tests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
@@ -1012,7 +940,6 @@ main/CMakeFiles/main.dir/clean:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /home/bryson/projects/c++/cpp-template/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

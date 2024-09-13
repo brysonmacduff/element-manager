@@ -4,4 +4,4 @@
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-include("/home/bryson/projects/c++/cpp-template/build/tests/shape_tests[1]_include.cmake")
+include("/home/bryson/projects/c++/cpp-template/build/tests/run_tests[1]_include.cmake")

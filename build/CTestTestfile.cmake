@@ -7,4 +7,3 @@
 subdirs("src")
 subdirs("inc")
 subdirs("tests")
-subdirs("main")

@@ -123,7 +123,6 @@ preinstall/fast:
 
 # clear depends
 depend:
-	cd /home/bryson/projects/c++/cpp-template/build && $(CMAKE_COMMAND) -P /home/bryson/projects/c++/cpp-template/build/CMakeFiles/VerifyGlobs.cmake
 	cd /home/bryson/projects/c++/cpp-template/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -136,7 +135,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... inc"
 .PHONY : help
 
 
@@ -148,7 +146,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/bryson/projects/c++/cpp-template/build && $(CMAKE_COMMAND) -P /home/bryson/projects/c++/cpp-template/build/CMakeFiles/VerifyGlobs.cmake
 	cd /home/bryson/projects/c++/cpp-template/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

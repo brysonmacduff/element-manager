@@ -1,9 +1,12 @@
-file(GLOB TEST_FILES CONFIGURE_DEPENDS "*.cpp")
+include_directories("${CMAKE_SOURCE_DIR}/inc" "${CMAKE_SOURCE_DIR}/src")
+
+file(GLOB TEST_FILES "${CMAKE_SOURCE_DIR}/inc/*.h" "${CMAKE_SOURCE_DIR}/src/*.cpp" "*.cpp")
+
+list(REMOVE_ITEM TEST_FILES "${CMAKE_SOURCE_DIR}/src/main.cpp")
 
 if(BUILD_TESTING)
-    add_executable(shape_tests ${TEST_FILES})
-    target_include_directories(src INTERFACE ${CMAKE_CURRENT_SOURCE_DIR} "${CMAKE_CURRENT_SOURCE_DIR}/src")
-    target_link_libraries(shape_tests src GTest::gtest_main GTest::gmock_main)
+    add_executable(run_tests ${TEST_FILES})
+    target_link_libraries(run_tests GTest::gtest_main GTest::gmock_main)
     include(GoogleTest)
-    gtest_discover_tests(shape_tests)
+    gtest_discover_tests(run_tests)
 endif()

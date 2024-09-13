@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/bryson/projects/c++/cpp-template/src/main.cpp" "src/CMakeFiles/src.dir/main.cpp.o" "gcc" "src/CMakeFiles/src.dir/main.cpp.o.d"
   "/home/bryson/projects/c++/cpp-template/src/shape.cpp" "src/CMakeFiles/src.dir/shape.cpp.o" "gcc" "src/CMakeFiles/src.dir/shape.cpp.o.d"
   )
 

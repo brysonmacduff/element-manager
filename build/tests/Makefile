@@ -123,54 +123,53 @@ preinstall/fast:
 
 # clear depends
 depend:
-	cd /home/bryson/projects/c++/cpp-template/build && $(CMAKE_COMMAND) -P /home/bryson/projects/c++/cpp-template/build/CMakeFiles/VerifyGlobs.cmake
 	cd /home/bryson/projects/c++/cpp-template/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-tests/CMakeFiles/shape_tests.dir/rule:
-	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/shape_tests.dir/rule
-.PHONY : tests/CMakeFiles/shape_tests.dir/rule
+tests/CMakeFiles/run_tests.dir/rule:
+	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_tests.dir/rule
+.PHONY : tests/CMakeFiles/run_tests.dir/rule
 
 # Convenience name for target.
-shape_tests: tests/CMakeFiles/shape_tests.dir/rule
-.PHONY : shape_tests
+run_tests: tests/CMakeFiles/run_tests.dir/rule
+.PHONY : run_tests
 
 # fast build rule for target.
-shape_tests/fast:
-	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/shape_tests.dir/build.make tests/CMakeFiles/shape_tests.dir/build
-.PHONY : shape_tests/fast
+run_tests/fast:
+	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_tests.dir/build.make tests/CMakeFiles/run_tests.dir/build
+.PHONY : run_tests/fast
 
-misc_tests.o: misc_tests.cpp.o
-.PHONY : misc_tests.o
+__/src/shape.o: __/src/shape.cpp.o
+.PHONY : __/src/shape.o
 
 # target to build an object file
-misc_tests.cpp.o:
-	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/shape_tests.dir/build.make tests/CMakeFiles/shape_tests.dir/misc_tests.cpp.o
-.PHONY : misc_tests.cpp.o
+__/src/shape.cpp.o:
+	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_tests.dir/build.make tests/CMakeFiles/run_tests.dir/__/src/shape.cpp.o
+.PHONY : __/src/shape.cpp.o
 
-misc_tests.i: misc_tests.cpp.i
-.PHONY : misc_tests.i
+__/src/shape.i: __/src/shape.cpp.i
+.PHONY : __/src/shape.i
 
 # target to preprocess a source file
-misc_tests.cpp.i:
-	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/shape_tests.dir/build.make tests/CMakeFiles/shape_tests.dir/misc_tests.cpp.i
-.PHONY : misc_tests.cpp.i
+__/src/shape.cpp.i:
+	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_tests.dir/build.make tests/CMakeFiles/run_tests.dir/__/src/shape.cpp.i
+.PHONY : __/src/shape.cpp.i
 
-misc_tests.s: misc_tests.cpp.s
-.PHONY : misc_tests.s
+__/src/shape.s: __/src/shape.cpp.s
+.PHONY : __/src/shape.s
 
 # target to generate assembly for a file
-misc_tests.cpp.s:
-	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/shape_tests.dir/build.make tests/CMakeFiles/shape_tests.dir/misc_tests.cpp.s
-.PHONY : misc_tests.cpp.s
+__/src/shape.cpp.s:
+	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_tests.dir/build.make tests/CMakeFiles/run_tests.dir/__/src/shape.cpp.s
+.PHONY : __/src/shape.cpp.s
 
 shape_tests.o: shape_tests.cpp.o
 .PHONY : shape_tests.o
 
 # target to build an object file
 shape_tests.cpp.o:
-	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/shape_tests.dir/build.make tests/CMakeFiles/shape_tests.dir/shape_tests.cpp.o
+	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_tests.dir/build.make tests/CMakeFiles/run_tests.dir/shape_tests.cpp.o
 .PHONY : shape_tests.cpp.o
 
 shape_tests.i: shape_tests.cpp.i
@@ -178,7 +177,7 @@ shape_tests.i: shape_tests.cpp.i
 
 # target to preprocess a source file
 shape_tests.cpp.i:
-	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/shape_tests.dir/build.make tests/CMakeFiles/shape_tests.dir/shape_tests.cpp.i
+	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_tests.dir/build.make tests/CMakeFiles/run_tests.dir/shape_tests.cpp.i
 .PHONY : shape_tests.cpp.i
 
 shape_tests.s: shape_tests.cpp.s
@@ -186,7 +185,7 @@ shape_tests.s: shape_tests.cpp.s
 
 # target to generate assembly for a file
 shape_tests.cpp.s:
-	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/shape_tests.dir/build.make tests/CMakeFiles/shape_tests.dir/shape_tests.cpp.s
+	cd /home/bryson/projects/c++/cpp-template/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_tests.dir/build.make tests/CMakeFiles/run_tests.dir/shape_tests.cpp.s
 .PHONY : shape_tests.cpp.s
 
 # Help Target
@@ -198,10 +197,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... shape_tests"
-	@echo "... misc_tests.o"
-	@echo "... misc_tests.i"
-	@echo "... misc_tests.s"
+	@echo "... run_tests"
+	@echo "... __/src/shape.o"
+	@echo "... __/src/shape.i"
+	@echo "... __/src/shape.s"
 	@echo "... shape_tests.o"
 	@echo "... shape_tests.i"
 	@echo "... shape_tests.s"
@@ -216,7 +215,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/bryson/projects/c++/cpp-template/build && $(CMAKE_COMMAND) -P /home/bryson/projects/c++/cpp-template/build/CMakeFiles/VerifyGlobs.cmake
 	cd /home/bryson/projects/c++/cpp-template/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

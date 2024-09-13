@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/shape_tests.dir/misc_tests.cpp.o"
-  "CMakeFiles/shape_tests.dir/misc_tests.cpp.o.d"
+  "CMakeFiles/shape_tests.dir/__/src/main.cpp.o"
+  "CMakeFiles/shape_tests.dir/__/src/main.cpp.o.d"
+  "CMakeFiles/shape_tests.dir/__/src/shape.cpp.o"
+  "CMakeFiles/shape_tests.dir/__/src/shape.cpp.o.d"
   "CMakeFiles/shape_tests.dir/shape_tests.cpp.o"
   "CMakeFiles/shape_tests.dir/shape_tests.cpp.o.d"
   "shape_tests"

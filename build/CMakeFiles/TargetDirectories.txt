@@ -33,15 +33,10 @@
 /home/bryson/projects/c++/cpp-template/build/src/CMakeFiles/test.dir
 /home/bryson/projects/c++/cpp-template/build/src/CMakeFiles/edit_cache.dir
 /home/bryson/projects/c++/cpp-template/build/src/CMakeFiles/rebuild_cache.dir
-/home/bryson/projects/c++/cpp-template/build/inc/CMakeFiles/inc.dir
 /home/bryson/projects/c++/cpp-template/build/inc/CMakeFiles/test.dir
 /home/bryson/projects/c++/cpp-template/build/inc/CMakeFiles/edit_cache.dir
 /home/bryson/projects/c++/cpp-template/build/inc/CMakeFiles/rebuild_cache.dir
-/home/bryson/projects/c++/cpp-template/build/tests/CMakeFiles/shape_tests.dir
+/home/bryson/projects/c++/cpp-template/build/tests/CMakeFiles/run_tests.dir
 /home/bryson/projects/c++/cpp-template/build/tests/CMakeFiles/test.dir
 /home/bryson/projects/c++/cpp-template/build/tests/CMakeFiles/edit_cache.dir
 /home/bryson/projects/c++/cpp-template/build/tests/CMakeFiles/rebuild_cache.dir
-/home/bryson/projects/c++/cpp-template/build/main/CMakeFiles/main.dir
-/home/bryson/projects/c++/cpp-template/build/main/CMakeFiles/test.dir
-/home/bryson/projects/c++/cpp-template/build/main/CMakeFiles/edit_cache.dir
-/home/bryson/projects/c++/cpp-template/build/main/CMakeFiles/rebuild_cache.dir

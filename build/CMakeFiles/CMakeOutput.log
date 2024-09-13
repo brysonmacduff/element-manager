@@ -601,3 +601,723 @@ int main(void)
   return 0;
 }
 
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_50f20/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_50f20.dir/build.make CMakeFiles/cmTC_50f20.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_50f20.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_50f20.dir/CheckIncludeFile.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_50f20
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50f20.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_50f20.dir/CheckIncludeFile.cxx.o -o cmTC_50f20 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_88bba/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_88bba.dir/build.make CMakeFiles/cmTC_88bba.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_88bba.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_88bba.dir/src.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_88bba
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88bba.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_88bba.dir/src.cxx.o -o cmTC_88bba 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8594d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8594d.dir/build.make CMakeFiles/cmTC_8594d.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8594d.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_8594d.dir/CheckIncludeFile.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_8594d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8594d.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_8594d.dir/CheckIncludeFile.cxx.o -o cmTC_8594d 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d6318/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d6318.dir/build.make CMakeFiles/cmTC_d6318.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d6318.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_d6318.dir/src.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d6318
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d6318.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_d6318.dir/src.cxx.o -o cmTC_d6318 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_81401/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_81401.dir/build.make CMakeFiles/cmTC_81401.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_81401.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_81401.dir/CheckIncludeFile.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_81401
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81401.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_81401.dir/CheckIncludeFile.cxx.o -o cmTC_81401 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_01f66/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_01f66.dir/build.make CMakeFiles/cmTC_01f66.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_01f66.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_01f66.dir/src.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_01f66
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01f66.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_01f66.dir/src.cxx.o -o cmTC_01f66 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8c273/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8c273.dir/build.make CMakeFiles/cmTC_8c273.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8c273.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_8c273.dir/CheckIncludeFile.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_8c273
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c273.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_8c273.dir/CheckIncludeFile.cxx.o -o cmTC_8c273 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_93e1d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_93e1d.dir/build.make CMakeFiles/cmTC_93e1d.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_93e1d.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_93e1d.dir/src.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_93e1d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93e1d.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_93e1d.dir/src.cxx.o -o cmTC_93e1d 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_39429/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_39429.dir/build.make CMakeFiles/cmTC_39429.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_39429.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_39429.dir/CheckIncludeFile.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_39429
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39429.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_39429.dir/CheckIncludeFile.cxx.o -o cmTC_39429 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_351a1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_351a1.dir/build.make CMakeFiles/cmTC_351a1.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_351a1.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_351a1.dir/src.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_351a1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_351a1.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_351a1.dir/src.cxx.o -o cmTC_351a1 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f5309/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f5309.dir/build.make CMakeFiles/cmTC_f5309.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f5309.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_f5309.dir/CheckIncludeFile.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_f5309
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f5309.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_f5309.dir/CheckIncludeFile.cxx.o -o cmTC_f5309 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e79e4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e79e4.dir/build.make CMakeFiles/cmTC_e79e4.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e79e4.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_e79e4.dir/src.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e79e4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e79e4.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_e79e4.dir/src.cxx.o -o cmTC_e79e4 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b29ed/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b29ed.dir/build.make CMakeFiles/cmTC_b29ed.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b29ed.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_b29ed.dir/CheckIncludeFile.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_b29ed
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b29ed.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_b29ed.dir/CheckIncludeFile.cxx.o -o cmTC_b29ed 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_64e14/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_64e14.dir/build.make CMakeFiles/cmTC_64e14.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_64e14.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_64e14.dir/src.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_64e14
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64e14.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_64e14.dir/src.cxx.o -o cmTC_64e14 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_be30a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_be30a.dir/build.make CMakeFiles/cmTC_be30a.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_be30a.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_be30a.dir/CheckIncludeFile.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_be30a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be30a.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_be30a.dir/CheckIncludeFile.cxx.o -o cmTC_be30a 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ee34d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ee34d.dir/build.make CMakeFiles/cmTC_ee34d.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ee34d.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_ee34d.dir/src.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ee34d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee34d.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_ee34d.dir/src.cxx.o -o cmTC_ee34d 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e9a83/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e9a83.dir/build.make CMakeFiles/cmTC_e9a83.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e9a83.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_e9a83.dir/CheckIncludeFile.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_e9a83
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9a83.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_e9a83.dir/CheckIncludeFile.cxx.o -o cmTC_e9a83 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bc7a9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bc7a9.dir/build.make CMakeFiles/cmTC_bc7a9.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bc7a9.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_bc7a9.dir/src.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_bc7a9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc7a9.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_bc7a9.dir/src.cxx.o -o cmTC_bc7a9 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e5bdc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e5bdc.dir/build.make CMakeFiles/cmTC_e5bdc.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e5bdc.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_e5bdc.dir/CheckIncludeFile.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_e5bdc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5bdc.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_e5bdc.dir/CheckIncludeFile.cxx.o -o cmTC_e5bdc 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_66035/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_66035.dir/build.make CMakeFiles/cmTC_66035.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_66035.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_66035.dir/src.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_66035
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66035.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_66035.dir/src.cxx.o -o cmTC_66035 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f3900/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f3900.dir/build.make CMakeFiles/cmTC_f3900.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f3900.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_f3900.dir/CheckIncludeFile.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_f3900
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3900.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_f3900.dir/CheckIncludeFile.cxx.o -o cmTC_f3900 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b491e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b491e.dir/build.make CMakeFiles/cmTC_b491e.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b491e.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_b491e.dir/src.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b491e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b491e.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_b491e.dir/src.cxx.o -o cmTC_b491e 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9dc8b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9dc8b.dir/build.make CMakeFiles/cmTC_9dc8b.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9dc8b.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_9dc8b.dir/CheckIncludeFile.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_9dc8b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9dc8b.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_9dc8b.dir/CheckIncludeFile.cxx.o -o cmTC_9dc8b 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4f3d0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4f3d0.dir/build.make CMakeFiles/cmTC_4f3d0.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4f3d0.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_4f3d0.dir/src.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4f3d0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f3d0.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_4f3d0.dir/src.cxx.o -o cmTC_4f3d0 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_45ec1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_45ec1.dir/build.make CMakeFiles/cmTC_45ec1.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_45ec1.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_45ec1.dir/CheckIncludeFile.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_45ec1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45ec1.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_45ec1.dir/CheckIncludeFile.cxx.o -o cmTC_45ec1 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b51c2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b51c2.dir/build.make CMakeFiles/cmTC_b51c2.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b51c2.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_b51c2.dir/src.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b51c2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b51c2.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_b51c2.dir/src.cxx.o -o cmTC_b51c2 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a1a9d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a1a9d.dir/build.make CMakeFiles/cmTC_a1a9d.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a1a9d.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_a1a9d.dir/CheckIncludeFile.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_a1a9d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1a9d.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_a1a9d.dir/CheckIncludeFile.cxx.o -o cmTC_a1a9d 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5d09c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5d09c.dir/build.make CMakeFiles/cmTC_5d09c.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5d09c.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_5d09c.dir/src.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5d09c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d09c.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_5d09c.dir/src.cxx.o -o cmTC_5d09c 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_afad6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_afad6.dir/build.make CMakeFiles/cmTC_afad6.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_afad6.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -std=gnu++20 -o CMakeFiles/cmTC_afad6.dir/CheckIncludeFile.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_afad6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afad6.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_afad6.dir/CheckIncludeFile.cxx.o -o cmTC_afad6 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a7ff1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a7ff1.dir/build.make CMakeFiles/cmTC_a7ff1.dir/build
+gmake[1]: Entering directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a7ff1.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_a7ff1.dir/src.cxx.o -c /home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a7ff1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7ff1.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_a7ff1.dir/src.cxx.o -o cmTC_a7ff1 
+gmake[1]: Leaving directory '/home/bryson/projects/c++/cpp-template/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
