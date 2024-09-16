@@ -63,7 +63,7 @@
 					"source" : "src",
 					"targetIndexes" : 
 					[
-						29
+						28
 					]
 				},
 				{
@@ -89,7 +89,7 @@
 					"source" : "tests",
 					"targetIndexes" : 
 					[
-						28
+						29
 					]
 				}
 			],
@@ -339,17 +339,17 @@
 					"projectIndex" : 0
 				},
 				{
+					"directoryIndex" : 1,
+					"id" : "executable::@145eef247bfb46b6828c",
+					"jsonFile" : "target-executable-1d79e46358f5409c46ac.json",
+					"name" : "executable",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 3,
 					"id" : "run_tests::@a44f0ac069e85531cdee",
 					"jsonFile" : "target-run_tests-944e2cc9cb183942dd01.json",
 					"name" : "run_tests",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 1,
-					"id" : "src::@145eef247bfb46b6828c",
-					"jsonFile" : "target-src-0b73315562dd89db24c1.json",
-					"name" : "src",
 					"projectIndex" : 0
 				}
 			]

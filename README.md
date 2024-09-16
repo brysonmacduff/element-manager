@@ -7,7 +7,7 @@
     * make
 * Run Instructions:
     * cd build
-    * make ./main/main
+    * make ./src/executable
 * Testing Instructions:
     * cd build
     * make test
