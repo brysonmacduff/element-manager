@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/bryson/projects/c++/cpp-template/build/src",
+  "command": "/usr/bin/c++  -I/home/bryson/projects/c++/cpp-template/inc -g -std=gnu++20 -o CMakeFiles/executable.dir/main.cpp.o -c /home/bryson/projects/c++/cpp-template/src/main.cpp",
+  "file": "/home/bryson/projects/c++/cpp-template/src/main.cpp"
+},
+{
+  "directory": "/home/bryson/projects/c++/cpp-template/build/src",
+  "command": "/usr/bin/c++  -I/home/bryson/projects/c++/cpp-template/inc -g -std=gnu++20 -o CMakeFiles/executable.dir/shape.cpp.o -c /home/bryson/projects/c++/cpp-template/src/shape.cpp",
+  "file": "/home/bryson/projects/c++/cpp-template/src/shape.cpp"
+},
+{
+  "directory": "/home/bryson/projects/c++/cpp-template/build/tests",
+  "command": "/usr/bin/c++  -I/home/bryson/projects/c++/cpp-template/inc -I/home/bryson/projects/c++/cpp-template/src -g -DGTEST_HAS_PTHREAD=1 -std=gnu++20 -o CMakeFiles/run_tests.dir/__/src/shape.cpp.o -c /home/bryson/projects/c++/cpp-template/src/shape.cpp",
+  "file": "/home/bryson/projects/c++/cpp-template/src/shape.cpp"
+},
+{
+  "directory": "/home/bryson/projects/c++/cpp-template/build/tests",
+  "command": "/usr/bin/c++  -I/home/bryson/projects/c++/cpp-template/inc -I/home/bryson/projects/c++/cpp-template/src -g -DGTEST_HAS_PTHREAD=1 -std=gnu++20 -o CMakeFiles/run_tests.dir/shape_tests.cpp.o -c /home/bryson/projects/c++/cpp-template/tests/shape_tests.cpp",
+  "file": "/home/bryson/projects/c++/cpp-template/tests/shape_tests.cpp"
+}
+]
