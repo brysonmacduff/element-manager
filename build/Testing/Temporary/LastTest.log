@@ -1,10 +1,10 @@
-Start testing: Sep 23 19:47 EDT
+Start testing: Sep 23 19:52 EDT
 ----------------------------------------------------------
 1/6 Testing: shape_tests.side_count_constructor_test
 1/6 Test: shape_tests.side_count_constructor_test
 Command: "/home/bryson/projects/c++/cpp-template/build/tests/run_tests" "--gtest_filter=shape_tests.side_count_constructor_test" "--gtest_also_run_disabled_tests"
 Directory: /home/bryson/projects/c++/cpp-template/build/tests
-"shape_tests.side_count_constructor_test" start time: Sep 23 19:47 EDT
+"shape_tests.side_count_constructor_test" start time: Sep 23 19:52 EDT
 Output:
 ----------------------------------------------------------
 Running main() from ./googletest/src/gtest_main.cc
@@ -23,7 +23,7 @@ Note: Google Test filter = shape_tests.side_count_constructor_test
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"shape_tests.side_count_constructor_test" end time: Sep 23 19:47 EDT
+"shape_tests.side_count_constructor_test" end time: Sep 23 19:52 EDT
 "shape_tests.side_count_constructor_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -31,7 +31,7 @@ Test Passed.
 2/6 Test: shape_tests.angles_constructor_test
 Command: "/home/bryson/projects/c++/cpp-template/build/tests/run_tests" "--gtest_filter=shape_tests.angles_constructor_test" "--gtest_also_run_disabled_tests"
 Directory: /home/bryson/projects/c++/cpp-template/build/tests
-"shape_tests.angles_constructor_test" start time: Sep 23 19:47 EDT
+"shape_tests.angles_constructor_test" start time: Sep 23 19:52 EDT
 Output:
 ----------------------------------------------------------
 Running main() from ./googletest/src/gtest_main.cc
@@ -50,7 +50,7 @@ Note: Google Test filter = shape_tests.angles_constructor_test
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"shape_tests.angles_constructor_test" end time: Sep 23 19:47 EDT
+"shape_tests.angles_constructor_test" end time: Sep 23 19:52 EDT
 "shape_tests.angles_constructor_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -58,7 +58,7 @@ Test Passed.
 3/6 Test: shape_tests.mock_get_side_count
 Command: "/home/bryson/projects/c++/cpp-template/build/tests/run_tests" "--gtest_filter=shape_tests.mock_get_side_count" "--gtest_also_run_disabled_tests"
 Directory: /home/bryson/projects/c++/cpp-template/build/tests
-"shape_tests.mock_get_side_count" start time: Sep 23 19:47 EDT
+"shape_tests.mock_get_side_count" start time: Sep 23 19:52 EDT
 Output:
 ----------------------------------------------------------
 Running main() from ./googletest/src/gtest_main.cc
@@ -77,7 +77,7 @@ Note: Google Test filter = shape_tests.mock_get_side_count
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"shape_tests.mock_get_side_count" end time: Sep 23 19:47 EDT
+"shape_tests.mock_get_side_count" end time: Sep 23 19:52 EDT
 "shape_tests.mock_get_side_count" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -85,7 +85,7 @@ Test Passed.
 4/6 Test: shape_tests.equal_operator_test
 Command: "/home/bryson/projects/c++/cpp-template/build/tests/run_tests" "--gtest_filter=shape_tests.equal_operator_test" "--gtest_also_run_disabled_tests"
 Directory: /home/bryson/projects/c++/cpp-template/build/tests
-"shape_tests.equal_operator_test" start time: Sep 23 19:47 EDT
+"shape_tests.equal_operator_test" start time: Sep 23 19:52 EDT
 Output:
 ----------------------------------------------------------
 Running main() from ./googletest/src/gtest_main.cc
@@ -104,7 +104,7 @@ Note: Google Test filter = shape_tests.equal_operator_test
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"shape_tests.equal_operator_test" end time: Sep 23 19:47 EDT
+"shape_tests.equal_operator_test" end time: Sep 23 19:52 EDT
 "shape_tests.equal_operator_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -112,7 +112,7 @@ Test Passed.
 5/6 Test: shape_tests.equal_assignment_test
 Command: "/home/bryson/projects/c++/cpp-template/build/tests/run_tests" "--gtest_filter=shape_tests.equal_assignment_test" "--gtest_also_run_disabled_tests"
 Directory: /home/bryson/projects/c++/cpp-template/build/tests
-"shape_tests.equal_assignment_test" start time: Sep 23 19:47 EDT
+"shape_tests.equal_assignment_test" start time: Sep 23 19:52 EDT
 Output:
 ----------------------------------------------------------
 Running main() from ./googletest/src/gtest_main.cc
@@ -131,7 +131,7 @@ Note: Google Test filter = shape_tests.equal_assignment_test
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"shape_tests.equal_assignment_test" end time: Sep 23 19:47 EDT
+"shape_tests.equal_assignment_test" end time: Sep 23 19:52 EDT
 "shape_tests.equal_assignment_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -139,7 +139,7 @@ Test Passed.
 6/6 Test: shape_tests.copy_constructor_test
 Command: "/home/bryson/projects/c++/cpp-template/build/tests/run_tests" "--gtest_filter=shape_tests.copy_constructor_test" "--gtest_also_run_disabled_tests"
 Directory: /home/bryson/projects/c++/cpp-template/build/tests
-"shape_tests.copy_constructor_test" start time: Sep 23 19:47 EDT
+"shape_tests.copy_constructor_test" start time: Sep 23 19:52 EDT
 Output:
 ----------------------------------------------------------
 Running main() from ./googletest/src/gtest_main.cc
@@ -158,8 +158,8 @@ Note: Google Test filter = shape_tests.copy_constructor_test
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"shape_tests.copy_constructor_test" end time: Sep 23 19:47 EDT
+"shape_tests.copy_constructor_test" end time: Sep 23 19:52 EDT
 "shape_tests.copy_constructor_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Sep 23 19:47 EDT
+End testing: Sep 23 19:52 EDT

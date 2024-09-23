@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/executable.dir/main.cpp.o CMakeFiles/executable.dir/shape.cpp.o -o executable 
+/usr/bin/c++ CMakeFiles/executable.dir/main.cpp.o CMakeFiles/executable.dir/shape.cpp.o -o executable 

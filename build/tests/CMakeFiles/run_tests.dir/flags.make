@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/bryson/projects/c++/cpp-template/inc -I/home/bryson/projects/c++/cpp-template/src
 
-CXX_FLAGS = -g -DGTEST_HAS_PTHREAD=1 -std=gnu++20
+CXX_FLAGS = -DGTEST_HAS_PTHREAD=1 -std=gnu++20
 
