@@ -16,7 +16,7 @@
         * libgtest-dev
         * libgmock-dev
 * Build Debian Package:
-    * cp build/src/cpp-template deb/cpp-template
+    * cp build/src/cpp-template deb/cpp-template/usr/local/bin
     * cd deb
     * dpkg-deb --build cpp-template
     * dpkg -i cpp-template.deb
