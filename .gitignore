@@ -2,4 +2,4 @@
 build/**
 # exclude build files in the deb directory
 deb/cpp-template/usr/local/bin/*
-deb/cpp-template/*
+deb/*
