@@ -1,5 +1,5 @@
 * Author: Bryson MacDuff
-* Edit Date: 2024-09-12
+* Edit Date: 2024-09-23
 * Description: This is a c++ template project
 * Build Instructions:
     * cd build
@@ -7,7 +7,7 @@
     * make
 * Run Instructions:
     * cd build
-    * make ./src/executable
+    * make ./src/cpp_template
 * Testing Instructions:
     * cd build
     * make test
@@ -15,3 +15,8 @@
     * GoogleTest (GTest)
         * libgtest-dev
         * libgmock-dev
+* Build Debian Package:
+    * cp build/src/cpp-template deb/cpp-template
+    * cd deb
+    * dpkg-deb --build cpp-template
+    * dpkg -i cpp-template.deb
