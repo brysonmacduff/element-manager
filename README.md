@@ -1,22 +1,24 @@
 * Author: Bryson MacDuff
-* Edit Date: 2024-09-23
-* Description: This is a c++ template project
+* Edit Date: 2024-09-28
+* Description: This is a simple project to experiment with background processes.
 * Build Instructions:
     * cd build
     * cmake ..
     * make
 * Run Instructions:
     * cd build
-    * make ./src/cpp_template
+    * make ./src/element_manager
 * Testing Instructions:
     * cd build
     * make test
-* Testing Dependecies:
+* Dependecies:
     * GoogleTest (GTest)
         * libgtest-dev
         * libgmock-dev
+    * Speed Log
+        * libspdlog-dev
 * Build Debian Package:
-    * cp build/src/cpp-template deb/cpp-template/usr/local/bin
+    * cp build/src/element_manager deb/element-manager/usr/local/bin
     * cd deb
-    * dpkg-deb --build cpp-template
-    * dpkg -i cpp-template.deb
+    * dpkg-deb --build element-manager
+    * dpkg -i element-manager.deb
