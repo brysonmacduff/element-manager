@@ -1,7 +1,5 @@
 # exclude build files and directories under build
 build/**
 # exclude build files in the deb directory
-#deb/*
-deb/element-manager/*
-deb/element-manager/usr/**
 !deb/element-manager/DEBIAN/control
+deb/**
