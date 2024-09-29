@@ -7,7 +7,7 @@
     * make
 * Run Instructions:
     * cd build
-    * make ./src/element_manager
+    * ./src/element_manager
 * Testing Instructions:
     * cd build
     * make test
