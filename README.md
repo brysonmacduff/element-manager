@@ -21,4 +21,4 @@
     * cp build/src/element_manager deb/element-manager/usr/local/bin
     * cd deb
     * dpkg-deb --build element-manager
-    * dpkg -i element-manager.deb
+    * apt install -y ./element-manager.deb

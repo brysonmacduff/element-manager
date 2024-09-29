@@ -2,3 +2,4 @@
 build/**
 # exclude build files in the deb directory
 deb/element-manager/usr/**
+deb/*.*
