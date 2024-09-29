@@ -1,0 +1,6 @@
+Package: element-manager
+Version: 1.0.1.0
+Maintainer: Bryson MacDuff
+Architecture: all
+Description: This is a simple project to experiment with background processes.
+Depends: libgtest-dev, libgmock-dev, libspdlog-dev
