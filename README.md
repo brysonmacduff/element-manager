@@ -11,10 +11,10 @@
 ## Testing Instructions
     make test
 ## Run Instructions
-    ./build/src/cpp_template
+    ./build/src/element_manager
 ## Debug Instructions
     make debug
-    gdb ./build/src/cpp_template
+    gdb ./build/src/element_manager
 ### Common GDB Commands
     break <file.cpp>:<line>
     run
@@ -22,7 +22,7 @@
     next
 ## Build Debian Package
     make deb
-    sudo apt install -y ./debian/cpp-template.deb
+    sudo apt install -y ./debian/element-manager.deb
 ## Clear Directories & Files
 * Remove "build" directory:
     make clean
