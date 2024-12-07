@@ -1,39 +1,39 @@
 // from this project
 #include "element_manager.h"
 
-// from standard library
-#include <iostream>
-
-// from google test
+// from external
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
-
-// from spdlog
-#include <spdlog/spdlog.h>
 
 using namespace ElementManagementSystem;
 
 namespace ElementManagerTesting
-{
-class ElementManagerTest : public ::testing::Test
+{   
+
+class ElementManagerTestFixture : public ::testing::Test
 {
 protected:
-    void SetUp() override
-    {
-
+    // Setup code executed before each test
+    void SetUp() override {
+        // Initialize resources here
+        spdlog::debug("ShapeTestFixture::SetUp()");
     }
 
-    void TearDown() override
-    {
-
+    // Teardown code executed after each test
+    void TearDown() override {
+        // Clean up resources here
+        spdlog::debug("ShapeTestFixture::TearDown()");
     }
 };
 }
 
 using namespace ElementManagerTesting;
 
-TEST_F(ElementManagerTest, ManageElementsTest)
-{
-    ElementManager manager;
-    ASSERT_NO_FATAL_FAILURE(manager.ManageElements());
+// GOOGLE TESTS
+
+TEST_F(ElementManagerTestFixture,ManageElements)
+{   
+    ElementManager elem_mngr;
+    ASSERT_NO_FATAL_FAILURE(elem_mngr.ManageElements());
 }
+

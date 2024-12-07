@@ -1,5 +1,6 @@
-# exclude build files and directories under build
-build/**
-# exclude build files in the deb directory
-deb/element-manager/usr/**
-deb/*.*
+# Exclude build directory.
+build
+
+# Exclude build files in the deb directory. Only allow the control file.
+debian/*
+!debian/control
