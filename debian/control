@@ -1,0 +1,8 @@
+Source: element-manager
+Package: element-manager
+Version: 1.1
+Maintainer: Bryson MacDuff
+Architecture: all
+Homepage: https://github.com/brysonmacduff/element-manager
+Description: This is a c++ program for process amd system monitoring.
+Build-Depends: build-essential, libgtest-dev, libgmock-dev, libspdlog-dev, cmake
