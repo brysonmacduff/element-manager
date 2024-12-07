@@ -3,7 +3,6 @@
 
 #include <chrono>
 #include <spdlog/spdlog.h>
-#include <string>
 
 namespace ElementManagementSystem
 {
